@@ -115,3 +115,8 @@
         end
       end
     end
+
+width = 500
+height = 1000
+Complex_funcs.generate(width, height)
+Complex_funcs.collect(width)
