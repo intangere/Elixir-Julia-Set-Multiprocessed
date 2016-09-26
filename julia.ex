@@ -34,7 +34,7 @@
         end
       end
 
-      def loop_y(row, x, i, y, h) when y < 800 do
+      def loop_y(row, x, i, y, h) when y < length(h) do
         z = new(i, Enum.at(h, y))
         g = abs_loop(z, 0, distance(z))
         row_ = List.update_at(row, y, fn(_) -> g end)
