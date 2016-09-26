@@ -1,20 +1,16 @@
     defmodule Complex_funcs do
 
       def cplx_add(number1, number2) do
-        new(number1[:real] + number2[:real], number1[:img] + 
-number2[:img])
+        new(number1[:real] + number2[:real], number1[:img] + number2[:img])
       end
 
       def cplx_sub(number1, number2) do
-        new(number1[:real] - number2[:real], number1[:img] - 
-number2[:img])
+        new(number1[:real] - number2[:real], number1[:img] - number2[:img])
       end  
 
       def cplx_mul(number1, number2) do
-        real = number1[:real] * number2[:real] - number1[:img] * 
-number2[:img]
-        img = number1[:real] * number2[:img] + number1[:img] * 
-number2[:real]
+        real = number1[:real] * number2[:real] - number1[:img] * number2[:img]
+        img = number1[:real] * number2[:img] + number1[:img] * number2[:real]
         new(real, img)
       end  
 
