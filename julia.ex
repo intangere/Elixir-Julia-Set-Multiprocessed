@@ -60,7 +60,7 @@
       end
 
       def distance(z) do
-        :math.sqrt(abs(z[:real]) + abs(z[:img]))
+        :math.sqrt(Kernel.abs(z[:real]) + Kernel.abs(z[:img]))
       end
 
       def abs_loop(z, g, d) when g < 255 and d < 2 do
@@ -75,7 +75,7 @@
       def f(z) do
         cplx_add(
             cplx_mul(z, z),
-            new(-0.7269, 0.1889)
+            new(-0.8, 0.156)
           )
       end
 
@@ -116,7 +116,7 @@
       end
     end
 
-width = 500
-height = 1000
+width = 800
+height = 1500
 Complex_funcs.generate(width, height)
 Complex_funcs.collect(width)
